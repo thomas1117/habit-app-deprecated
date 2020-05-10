@@ -91,7 +91,11 @@ function App() {
         }
       }
     })
-    return {label: streak[0] + ' - ' + streak.slice(-1)[0], count: streak.length}
+    if (streak[0] && streak.slice(-1)[0]) {
+      return {label: streak[0] + ' - ' + streak.slice(-1)[0], count: streak.length}
+    } else {
+      return {label: 'N/A', count: streak.length}
+    }
   }
 
   const includesDay = activeHabit && activeHabit.days.includes(activeHabit.activeDay)
