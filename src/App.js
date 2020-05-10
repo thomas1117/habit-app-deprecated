@@ -20,7 +20,10 @@ function App() {
     });
   }
 
-  const addItem = (text) => {
+  const addHabit = (text) => {
+    if (!text) {
+      return;
+    }
     const h = [...habits, {text, days: [], id: uuidv4()}]
     setHabits(h)
     persistHabits(h)
@@ -35,7 +38,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    addItem(text)
+    addHabit(text)
     setText('')
   }
 

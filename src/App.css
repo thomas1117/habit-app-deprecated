@@ -38,6 +38,7 @@ body {
   border-right: none;
   border-bottom: 1px solid inherit;
   margin-right: 1.25rem;
+  border-radius: 0;
   font-size: 16px;
 }
 
