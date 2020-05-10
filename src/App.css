@@ -60,6 +60,11 @@ body {
   /* border-bottom: 1px solid #fff; */
 }
 
+.habit-list {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 .habit-item {
   background: #363333;
   color: #dadada;

@@ -103,7 +103,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <ul>
+        <ul className="habit-list">
           {
             habits.map(
               item => (
